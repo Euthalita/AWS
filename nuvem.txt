@@ -1,0 +1,58 @@
+Regiões e zonas de disponibilidade
+	Suponhamos que exista uma cidade e nessa cidade há casas(que são as regiões)
+e cada casa possui um andar no qual chamamos de zona
+
+Amazon s3 
+É como se fosse uma gaveta gigante, onde é possivel guardar muitos dados, como backups, 
+arquivos de mídia
+
+Amazon EC2
+É como se fosse um super computador e é usado por empresas para executar aplicativos e serviços,
+criar ambientes de testes e desenvolvimentos, além de executar operações de big data com auto
+volume de processamento. 
+Aqui no EC2 é onde é criado máquinas virtuais
+
+Amazon RDS(RELACIONAL)
+Guarda banco de dados, permite a criação, gerenciamento e a escalabilidade. É usado por empresas
+que precisam de aplicativos que façam ligações com banco de dados
+
+Amazon SNS
+É um serviço de notificações que permitem a entrega de mensagens para dispositivos móveis, endereços
+de email, ou endpoints(https-protocolo de internet de comunicação).
+
+Amazon DynamoDB(NÃO RELACIONAL)
+É o local onde é organizado os documentos de uma maneira estruturada e organizada. É um serviço
+de banco de dados, porém é diferente do RDS. É UM BANCO DE DADOS NO SQL.
+Permite armazenar e recuperar grande quantidade de dados com alta disponibilidade de desempenho
+	Qual a diferença entre SQL e NO SQL?
+- No banco de dados SQL(RELACIONAL) os dados são armazenados de forma lógica e há tabelas com
+chave primaria, chave estrangeira, etc.
+-No banco de dados NO SQL(NÃO RELACIONAL) os dados são armazenados como documentos como texto,
+é usado como o JSON. 
+O DynamoDB é muito usado por empresas que precisam ultilizar grande quantidade de dados, como
+dados de jogos, analise de tráfego de web, informações de clientes, etc.
+
+AWS LAMBDA
+Executa manuteção e configuração do servidor, ou seja, você não precisa se preocupar pois é um
+serviço de computação sem servidor(serveless), não há máquina virtual para executar o processamento
+que permite executar códigos em resposta a eventos, como alteração de banco de dados, upload de
+arquivos ou envio de formularios. 
+É ultilizado por empresas que desejam criar aplicativos mais escalaveis e flexiveis, assim não 
+há a necessidade de se preocupar com infraestrutura de t.i e nem manutenção.
+
+Amazon Cloudfront
+É um serviço de distribuição de conteúdo que permite entregar conteúdos web como imagens, vídeos
+e arquivos de maneira rápida e segura
+
+Amazon Elastic Beanstalk
+Serviço de gerenciamento de aplicativos web, onde permite a implantação e gerenciamento de aplicativos
+web facilmente. É utilizado por grandes empresas que criam aplicativos e assim não precisam
+se preocupar com configurações de servidores ou infraestrutura 
+
+Amazon SQS
+Pagamento de contas, no qual, permite a comunicação de diferentes componentes de um aplicativo
+sem a necessidade de um acoplamento direto entre eles. Também funciona como um sistema de
+mensageria, no qual, eu posso enviar uma mensagem e a pessoa 
+
+Amazon Glacier / Ebs
+Responsável pelo backup dos dados caso ocorra algo e você precise recuperar os dados.
