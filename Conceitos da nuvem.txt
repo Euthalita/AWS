@@ -1,6 +1,33 @@
 Regiões e zonas de disponibilidade
+
+- Zonas de disponibilidade, regiões e locais de borda são componentes fundamentais para entender
+e usar a AWS
 	Suponhamos que exista uma cidade e nessa cidade há casas(que são as regiões)
 e cada casa possui um andar no qual chamamos de zona
+	As regiões são locais físicos ao redor do mundo onde a AWS mantém clusters de data
+centers
+Nas zonas de disponibilidade (AZs), é preciso saber quais serviços são limitados por fronteiras
+e como pode me ajudar a criar um ambiente altamente disponível. Cada serviço da AWS lida de 
+formas diferentes, então é preciso saber quais serviços lidam especialmente com AZs e como 
+eles se conectam e se comunicam. Além disso, é necessário ver como as AZs se comportam com 
+pontos de falha na arquitetura que eu irei hospedar e como é feita a comunicação de uma AZ 
+para outra.
+Ao considerar regiões é necessário análisar os mesmos ítens que nas AZs. Além disso, as regiões
+são usadas na recuperação de desastres, como quais serviços podem ajudar em falhas catastróficas
+e o que pode ser feito para evitar essas falhas e quais serviços ajudam para usar nas regiões.
+Além disso, enterder quando usar diferentes regiões e quais são os beneficios de uso de uma Região
+específica ou do uso de várias regiões. É necessário ver como o uso da Região afeta seus requisitos
+de conformidade, como por exemplo, o gerenciamento de dados é determinado por fronteiras soberanas,
+por isso, é importante saber como essas leis e requisitos afetarão seu uso da AWS cloud.
+
+
+Locais de borda
+São endpoints que veiculam conteudo armazenado em cache e dão acesso a serviços da AWS. Entender
+esse componente é um pouco mais complicado e pois não é tão obvio e intuitivo.
+É necessário conhecer quais serviços aproveitam locais de borda e qual a diferença de uso nesses
+serviços, como os locais de borda são usados no Amazon Cloud Front e no AWS Global Accelerator e
+se os locais de borda são usados apenas nesses serviços e qual nível de gerenciamento pode ser
+imposto
 
 Amazon s3 
 É como se fosse uma gaveta gigante, onde é possivel guardar muitos dados, como backups, 
