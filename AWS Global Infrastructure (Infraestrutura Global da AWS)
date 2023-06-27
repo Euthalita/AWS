@@ -1,0 +1,39 @@
+A infraestrutura da Nuvem AWS é criada em torno de regiões. A AWS tem 22 regiões em todo o mundo
+e a região da AWS é basicamente uma localização geográfica com uma ou mais zonas de disponibilidade
+As zonas de disponibilidade, por sua vez, consistem em um ou mais datacenters para conseguir 
+tolerância a falhas e estabilidade.
+As regiões estão isoladas umas das outras e os recursos de uma região não são replicados automaticamente
+em outras regiões. Quando você armazena dados em uma região específica, eles não são replicados fora
+dessa região, ou seja, é sua responsabilidade, como cliente, replicar dados entre regiões caso
+suas necessidades empresariais exijam isso.
+
+Há alguns fatos que você deve considerar ao selecionar uma ou mais regiões ideais onde armazenar
+os dados e usar os serviços da AWS.
+
+- Governança de dados
+Uma consideração essencial é a governança de dados e os requisitos jurídicos. Por exemplo, as 
+leis locais podem exigir que determinadas informações sejam mantidas dentro de limites geográficos.
+Essas leis podem restringir as regiões onde você pode oferecer conteúdo ou serviços, então
+tenha em mente que nem todos os serviços da AWS estarão disponíveis em todas as regiões, por isso
+é desejável executar suas aplicações e armazenar seus dados em uma região que seja o mais próxima
+possível do usuário e dos sistemas que os acessarão, isso ajudará você a reduzir a latência.
+Há um site de pesquisa que permite testar a latência entre sua localização e todas as outras regiões
+da AWS, é o CLOUD PING
+
+Há um variação de custo dos serviços da AWS, dependendo da regiãos, os valores mudam, por exemplo,
+no Brasil, um serviço custa 0,05 USD por hora, enquanto que o mesmo serviço em outro país, pode 
+custar 0,50 USD por hora.
+
+
+- Zonas de disponibilidade
+Cada região da AWS tem vários locais isolados conhecidos como zonas de disponibilidade.
+As zonas de disponibilidade tem sua própria infraestrutura de energia e estão fisicamente separadas
+de outras zonas por muitos quilômetros, todas elas estão sepadas por 100 km de distancia e
+todas estão interconectadas com alta largura de banda, baixa latência e fibra dedicada totalmente
+redundante o que fornece alta taxa de transferência
+
+	Como utilizar as zonas de disponibilidade?
+Ao implantar cargas de trabalho em uma região, é aconselhado usar várias zonas de disponibilidade,
+pois ao fazer isso, você não arrisca tudo em uma única aposta, pois particionando a aplicação em
+várias zonas, caso ocorra de uma delas ficar offiline, os servidores estarão funcionando nas outras
+zonas para atender as solicitações.
