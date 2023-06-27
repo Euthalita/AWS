@@ -1,0 +1,24 @@
+Modelos de implantação de computação em nuvem
+
+- Há três modelos de implantação de computação em nuvem
+	Cloud
+	Hybrid (Híbrido)
+	On-premises(private cloud)
+
+Cloud
+Uma aplicação baseada em nuvem é totalmente implantada na nuvem e todas as partes da aplicação 
+são executadas na nuvem.
+
+Hybrid
+Uma implantação híbrida é uma maneira de conectar infraestrutura e aplicações entre recursos de
+nuvem e recursos existentes que não estão localizados na nuvem.
+Esse modelo permite que uma organização amplie e expanda a infraestrutura para a nuvem enquanto
+conecta recursos de nuvem a sistemas internos.
+
+On-premises
+A implantação de recursos on-premises usa ferramentas de virtualização e gerenciamento de recursos
+e isso recebe o nome de nuvem privada. A implantação on-premises não oferece muitos dos benefícios
+da computação em nuvem, mas, ás vezes, é preferida por sua capacidade de oferecer recursos
+dedicados e na maioria dos casos, este modelo de implantação é igual á infraestrutura de TI 
+herdada mas que também pode usar tecnologias de virtualização e gerenciamento de aplicações
+para aumentar a utilização de recursos.
