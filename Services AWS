@@ -1,0 +1,32 @@
+Serviços da AWS
+
+- EC2(Elastic Compute Cloud)
+São máquinas virtuais na nuvem com capacidade redimensionável.
+	Serviços do EC2
+Auto Scaling
+O Auto Scaling permite adicionar ou remover automaticamente instâncias do EC2 de acordo com as
+condições definidas.
+
+Elastic Container Service (ECS)
+O serviço de contêiner elástico é um serviço de orquestração de conteineres altamente escalável
+e de alta performance que atende a contêineres do Docker.
+
+Elastic Container Registry (ECR)
+É um registro de contêiner do Docker totalmente gerenciado com que os desenvolvedores acharão
+extremamente fácil armazenar, gerenciar e implantar imagens de contêiner do Docker
+
+Elastic Beanstalk
+É um serviço para implantar e dimensionar aplicações e serviços Web em servidores familiares,
+como um lote ou Microsoft Internet Information Services
+
+AWS Lambda 
+Permite que você execute código sem provisionar ou gerenciar servidores e você só paga pela
+computação que consome, ou seja, não há cobrança quando seu código não está em execução.
+
+Elastic Kubernetes Service (ETS)
+Facilita o trabalho de implantar, gerenciar e dimensionar aplicações conteinerizadas que usam
+o Kubernetes na AWS
+
+AWS Fargate
+É um mecanismo de computação do Amazon ECS que permite executar conteineres sem precisar gerenciar
+servidores ou clusters   
