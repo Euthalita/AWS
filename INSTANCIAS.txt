@@ -1,0 +1,32 @@
+Instâncias AWS
+Os tipos de instância variam de várias maneiras, incluindo tipo de CPU, contagem de CPUs ou 
+núcleos, tipo de armazenamento, volume de armzenamento, volume de memória e performance da rede.
+Há varias categorias de instâncias e quais famílias de tipos de instância e números de geração
+se encaixam em cada um desses tipos de categoria.
+
+Vamos falar das instâncias do Amazon EC2 
+Tipos de instancias:
+
+- Propósito geral
+	a1, m4, m5, t2, t3
+	caso de uso: larga
+- Computação otimizada
+	c4, c5
+	caso de uso: Alta performace
+- Memória otimizada
+ 	r4, r5, x1, z1
+	caso de uso: banco de dados de memoria
+- Computação acelerada
+	f1, g3, g4, p2, p3
+	caso de uso: machine learning
+- Armazenamento otimizado
+	d2, h1, i3
+	caso de uso: sistemas de arquivos distribuídos
+
+Por exemplo, a instancia T3 fornece performance intermitente e os casos de uso desse tipo de 
+instância incluem sites, aplicações Web, ambientes de desenvolvimento, servidores de compilação
+e assim por diante.
+Já a instancia C5 são otimizadas para cargas de trabalho com uso intensivo de computação e 
+oferecem performance alta e econômica a um preço mais baixo por taxa de computação.
+
+As instâncias de arquivo são otimizadas para aplicações que usam muita memória
