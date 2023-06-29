@@ -4,8 +4,10 @@ Serviços da AWS
 São máquinas virtuais na nuvem com capacidade redimensionável.
 	Serviços do EC2
 Auto Scaling
-O Auto Scaling permite adicionar ou remover automaticamente instâncias do EC2 de acordo com as
-condições definidas.
+O Auto Scaling permite adicionar ou remover automaticamente ou manualmente instâncias do EC2 
+de acordo com as condições definidas em reposta á variação de demanda e ajuda a manter a 
+disponibilidade da aplicação, além de que ele fornece várias maneiras de ajustar o dimensionamento 
+para melhor atender ás necessidades da sua aplicação.
 
 Elastic Container Service (ECS)
 O serviço de contêiner elástico é um serviço de orquestração de conteineres altamente escalável
@@ -17,7 +19,8 @@ extremamente fácil armazenar, gerenciar e implantar imagens de contêiner do Do
 
 Elastic Beanstalk
 É um serviço para implantar e dimensionar aplicações e serviços Web em servidores familiares,
-como um lote ou Microsoft Internet Information Services
+como um lote ou Microsoft Internet Information Services e facilita a implantação rápida das
+aplicações criadas por você, ele fornece todos os serviços de aplicação necessários.
 
 AWS Lambda 
 Permite que você execute código sem provisionar ou gerenciar servidores e você só paga pela
@@ -30,3 +33,16 @@ o Kubernetes na AWS
 AWS Fargate
 É um mecanismo de computação do Amazon ECS que permite executar conteineres sem precisar gerenciar
 servidores ou clusters   
+
+Elastic Load Balancing
+É um serviço que distribui o trafego de entrada de aplicações ou de rede em vários destinos como
+instâncias do Elastic Compute, ou EC2, Internet Protocol, endereços IP e funções do Lambda em um
+único ou em vários ECs. Ele dimensiona o balanceador de carga com a mudança temporária de um 
+tráfego para a aplicação, ou seja, ele pode ser dimensionado automaticamente para a maioria das
+cargas de trabalho
+
+Os serviços baseados em conteiner, incluindo Amazon Elastic Container Service, Elastic Kubernetes
+Service, Fargate e Elastic Container Registry, permitem executar várias cargas de trabalho em 
+um único sistema operacional.
+Os conteineres são mais rápidos que uma máquina virtual, portanto, apresentam uma maior capacidade
+de resposta
