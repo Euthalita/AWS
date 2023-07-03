@@ -5,7 +5,7 @@ São máquinas virtuais na nuvem com capacidade redimensionável.
 	Serviços do EC2
 Auto Scaling
 O Auto Scaling permite adicionar ou remover automaticamente ou manualmente instâncias do EC2 
-de acordo com as condições definidas em reposta á variação de demanda e ajuda a manter a 
+de acordo com as condições definidas em reposta á variação de demanda, e ajuda a manter a 
 disponibilidade da aplicação, além de que ele fornece várias maneiras de ajustar o dimensionamento 
 para melhor atender ás necessidades da sua aplicação.
 
@@ -20,7 +20,9 @@ extremamente fácil armazenar, gerenciar e implantar imagens de contêiner do Do
 Elastic Beanstalk
 É um serviço para implantar e dimensionar aplicações e serviços Web em servidores familiares,
 como um lote ou Microsoft Internet Information Services e facilita a implantação rápida das
-aplicações criadas por você, ele fornece todos os serviços de aplicação necessários.
+aplicações criadas por você, ele fornece todos os serviços de aplicação necessários, ou seja,
+facilita a implantação rápida das aplicações criadas por você, fornecendo todos os serviços de 
+aplicação necessários
 
 AWS Lambda 
 Permite que você execute código sem provisionar ou gerenciar servidores e você só paga pela
@@ -35,11 +37,13 @@ AWS Fargate
 servidores ou clusters   
 
 Elastic Load Balancing
-É um serviço que distribui o trafego de entrada de aplicações ou de rede em vários destinos como
-instâncias do Elastic Compute, ou EC2, Internet Protocol, endereços IP e funções do Lambda em um
-único ou em vários ECs. Ele dimensiona o balanceador de carga com a mudança temporária de um 
-tráfego para a aplicação, ou seja, ele pode ser dimensionado automaticamente para a maioria das
-cargas de trabalho
+Muitos sites modernos demandam milhares de acessos e requerimentos, no qual, podem retornar dados de 
+imagem de texto, vídeo ou aplicações de maneira rápida e confiável. Geralmente são necessários servidores 
+adicionais para atender a esse alto volume, e assim, o Elastic Load distribui o trafego de entrada de 
+aplicações ou de rede em vários destinos como instâncias do Elastic Compute, ou EC2, Internet Protocol, 
+endereços IP e funções do Lambda em um único ou em vários ECs. Ele dimensiona o balanceador de carga com 
+a mudança temporária de um tráfego para a aplicação, ou seja, ele pode ser dimensionado automaticamente para
+a maioria das cargas de trabalho, sem a necessidade de fazer essa manutenção, ele faz automaticamente 
 
 Os serviços baseados em conteiner, incluindo Amazon Elastic Container Service, Elastic Kubernetes
 Service, Fargate e Elastic Container Registry, permitem executar várias cargas de trabalho em 
