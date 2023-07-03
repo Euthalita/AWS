@@ -1,0 +1,54 @@
+Armazenamento
+
+- Amazon S3 
+É um depósito de objetos. Você pode armazenar dados como objetos em recursos chamados 
+buckets. É possível armazenar quantos objetos quiser em um bucket.
+Os objetos podem ter até 5 terabytes e é possível controlar o acesso a ambos os buckets e ao
+sistema óptico, por exemplo, você pode controlar quem pode criar, excluir e recuperar objetos 
+no bucket, sendo possível visualizar o log de acesso do ucket e respectivos objetos. O bucket 
+tem que ser armazenado em uma região da AWS para otimizar a latência, minimizar custos ou cumprir
+requisitos normativos.
+O S3 é executado na maior infraestrutura de nuvem global do mundo.
+
+-Amazon Elastic Block Store (EBS)
+Fornece armazenamento em bloco persistentes para uso em instâncias do EC2 na nuvem. Cada volume
+do EBS é replicado automaticamente dentro da zona de disponibilidade para proteger você contra
+falhas de componente, oferencendo alta disponibilidade e durabilidade.
+Existem diferente tipos de unidade para o EBS, isso inclui as unidade de estado sólido, incluindo
+IOPS de provisão, SSDS de uso geral e unidades de disco rígido, no qual, inclui HTD superotimizado
+ou HDD frio. Com o EBS, é possível aumentar ou diminuir a escala de utilização em minutos.
+É possível criar um sistema de arquivos sobre esses volumes ou utilizá-los da maneira que 
+utilizaria um dispositivo de bloco (como um disco rígido). É possível alterar dinamicamente 
+a configuração de um volume anexado a uma instância.
+Os volumes do EBS são especialmente adequados ao uso como armazenamento principal para sistemas
+de arquivos, bancos de dados ou para todas as aplicações que necessitem de atualizações 
+granulares finas e acesso ao armazenamento em nível de bloco bruto e não formatado.
+Para fornecer um nível ainda mais alto de durabilidade de dados, o EBS oferece a capacidade de 
+criar um snapshot(registro do estado de um sistema, aplicação ou arquivos, a fim de estabelecer
+um ponto de restauração caso haja algum tipo de falha ou erro) pontual de seus volumes, com isso,
+a AWS permite recriar um novo volume a partir desse snapshot quando você quiser. Também é possivel
+ter volumes criptografados sem custo adicional, é a criptografia usada no site do EC2, assim, os
+dados que se movem entre a instância do EC2 e o volume do EBS, dentro dos datacenters serão
+criptografados tanto em trândito quanto em repouso.
+
+- Como lidar com uma aplicação em execução em várias instâncias que precisam usar o mesmo sistema
+de arquivos?
+	O Amazon S3 é uma das opções, mas ele não é aconselhado para performance e consistência
+de leitura/gravação de um sistema de arquivos de rede, para isso, é aconselhado o Amazon Elastic
+File System.
+O Amazon S3 é um sistema de depósito de objetos, não armazenamento de blocos, portanto, as 
+alterações substituem arquivos inteiros e não blobos de caracteres dentro de arquivos.
+ 
+
+- Amazon Elastic File System(EFS)
+Utilizado para alterações de alta taxa de transferencia em arquivos de tamanhos variados, sendo
+assim, o sistema de arquivos será bem superior a um sistema de depósito de objetos como o S3
+
+-Amazon S3 Glacier
+É um serviço de armazenamento seguro, durável e de custo extremamente baixo para arquivamento de
+dados e backup de longa duração. Ele foi projetado para oferecer 11 noves de durabilidade e oferece
+recursos abrangentes de segurança e conformidade que podem ajudar a cumprir até mesmo os requisitos
+normativos mais rigorosos. 
+Sendo assim, o Glacier é tipicamente projetado para dados, para armazenamento a longo prazo e
+dados pouco acessados
+ 
