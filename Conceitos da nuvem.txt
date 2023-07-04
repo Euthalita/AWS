@@ -31,7 +31,7 @@ imposto
 
 Amazon s3 
 É como se fosse uma gaveta gigante, onde é possivel guardar muitos dados, como backups, 
-arquivos de mídia
+arquivos de mídia, hospedar sites, etc
 
 Amazon EC2
 É como se fosse um super computador e é usado por empresas para executar aplicativos e serviços,
