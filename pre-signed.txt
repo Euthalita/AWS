@@ -1,0 +1,6 @@
+Pre-signed URL
+É um recurso no qual pode ser habilitado para acessar um arquivo URL hospedado no S3, no qual, 
+ficara disponivel o acesso publico por alguns dias.
+Caso o objeto hospedado no S3, precise ficar publico e disponivel por um longo periodo de tempo,
+po exemplo, uns 5 anos, não é necessário habilitar o pre-signed, visto que, desse modo é melhor
+habilitar diretamente no S3, como uma pasta publica.
