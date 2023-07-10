@@ -1,0 +1,51 @@
+AWS network services
+
+Amazon VPC
+A AWS oferece muitos serviços de rede, como VPCs ou nuvem virtual privada que permite provisionar
+uma seção logicamente isolada da Nuvem AWS, o Elastic Load Balancing que distribui automaticamente
+o tráfego de aplicações de entrada em vários destinos, como contêineres de instâncias do EC2, e 
+funções do Lambda.
+CloudFront é uma rede de entrega de conteúdo rápida ou serviço CDN que fornece com segurança dados,
+aplicações de vídeo e interfaces de programação de aplicações para clientes globalmente com baixa
+latência e altas velocidades de transferência.
+Nuvens privadas virtuais são partes isoladas da Nuvem AWS em que os clientes implantam sua infraes-
+trutura da AWS. Por exemplo, eles podem implantar uma instância do EC2 ou uma instância do Amazon
+Relational Database Service.
+VPCs são redes virtuais. Elas aceitam o roteamento de várias sub-redes e mecanismos de segurança
+refinados, assim, você tem controle total sobre seu ambiente de rede virtual, incluindo a seleção
+de seu próprio intervalo de endereços IP, criação de sub-redes e configuração de tabelas de rotas e
+gateways de rede. Você pode usar IPv4 e IPv6 na VPC para acessar recursos e aplicações com segurança
+e facilidade.
+Após selecionar uma região, você cria uma VPC e especifica o intervalo completo de endereços IP para
+todos os recursos que serão hospedados nessa VPC. A VPC pode incluir recursos em qualquer uma ou em 
+todas as zonas de disponibilidade dentro da região, em seguida, você pode criar sub-redes dentro da
+rede especificada dentro da VPC, escolhendo se elas permitirão conexões com a Internet pública ou
+permanecerão privadas.
+Se você não especificar uma sub-rede ao criar um recurso, ela será executada em sua VPC padrão. É 
+possível iniciar instâncias em sua VPC padrão sem precisar conhecer absolutamente nada sobre o Amazon
+VPC, ou seja, é possível criar sua própria VPC e configurá-la conforme necessário, isso é conhecido
+como VPC não padrão.As sub-redes criadas na VPC não padrão ou as sub-redes adicionais criadas na VPC 
+padrão são chamadas de sub-redes não padrão.Há VPCs dentro de uma única região e você pode ter até 
+cinco VPCs por região. 
+Algumas das configurações de segurança da VPC incluem lista de controle de acesso á rede que atua 
+como firewall para sub-redes associadas, controlando o tráfego de entrada e saída no nível da sub-rede.
+Grupos de segurança, que atuam como firewall para instâncias do EC2 associadas que controlam o tráfego
+de entrada e saída no nível da instância.
+Na arquitetura de exemplo apresentada(ver imagem "Arquitetura de exemplo" nessa mesma pasta), todos
+os dados da aplicação agora são armazenados na nuvem em um sistema de arquivos elástico compartilhado.
+Os servidores on-premises tem acesso rápido e confiável á AWS por meio do AWS Direct Connect.
+O Route 53 fornece resolução conforme necessário para que os recursos de computação em nuvem e locais
+se encontrem
+
+Amazon Route 53
+É um sistema DNS escalável, projetado para oferecer uma maneira confiável de rotear usuários finais
+para aplicações de Internet. 
+Ele converte nomes, como dubdub.example.com, em endereços IP numéricos, como 192.0.2.1, que os 
+computadores usarão para se conectarem entre si.
+
+AWS Direct Connect
+Fornece uma maneira de estabelecer uma conexão de rede privada dedicada do seu datacenter para a AWS,
+o que permite reduzir os custos de rede e aumntar a largura de banda.
+
+AWS VPN
+Fornece um túnel privado seguro de rede ou do dispositivo para a rede global da AWS
