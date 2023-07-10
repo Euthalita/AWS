@@ -1,0 +1,72 @@
+Data base (Serviço de banco de dados)
+Os serviços de banco de dados da Amazon são fáceis de configurar, gerenciar e manter, em vez de
+executar um software de banco de dados em uma instância do EC2. Eles permitem que você se concentre
+em tarefas não administrativas e rotineiras da plataforma de banco de dados, como alternativa, 
+você executa seu próprio software de banco de dados, lhe dara mais controle, flexibilidade e opções,
+ou seja, a AWS gerencia todas as configurações rotineiras do banco de dados, assim, você fica com 
+livre para se dedicar melhor á aplicação ou outras tarefas
+É necessário o total controle sobre o banco de dados, incluindo acesso do sistema e do usuário do
+sistema ou se precisar de acesso no nível do sistema operacional.
+Caso você precise usar um recurso de software comercial ou opções atualmente imcompatíveis com o
+Amazon RDS, a instalação de um banco de dados em uma instância do EC2 é uma boa opção a considerar.
+
+	-Implantação Multi-AZ
+É uma implantação síncrona sem necessidade de configurar e manter manualmente um banco de dados em
+espera. Não há necessidade de gerenciar backups e, o mais importante, as recuperações pontuais do
+seu banco de dados. Ele permite que você se concentre em tarefas de alto nível, portanto, apenas 
+ajustes de performance e otimização do esquema, em vez de gastar tempo na administração diária do 
+banco de dados.
+
+É possível ampliar e reduzir a escala do tipo de instância com base em seus padrões de carga de
+trabalho e isso é possível com o RDS
+
+	-Amazon Aurora 
+É uma ótima opção para qualquer aplicação empresarial que precise usar banco de dados relacional.
+Em comparação com os bancos de dados comerciais, o Aurora ajuda a reduzir os custos do banco de dados
+em 90% ou mais, melhorando a confiabilidade e a disponibilidade do banco de dados.
+O Aurora é um serviço totalmente gerenciado que ajuda a economizar tempo, automatizando tarefas 
+demoradas como provisionamento, aplicação de patches, backup, recuperação, detecção de falhas e, claro
+reparos.
+O serviço é um banco de dados relacional criado para a nuvem e compatível com MySQL e PostgreSQLSequel.
+É até cinco vezes mais rápido que os bancos de dados MySQL padrão e até três vezes mais rápido que
+os bancos de dados PostgreSQL padrão. Ele oferece alta performance e disponibilidade com até 15 
+réplicas de leitura de baixa latência, recuperação point-in-time, backup quase contínuo para o Amazon
+S3 e replicação entre três zonas de disponibilidade.
+
+Para criar a primeira instância de banco de dados Aurora e começar a migrar bancos de dados MySQL e 
+PostgreSQL, usa-se o console do RDS.
+
+	-Amazon DynamoDB
+É um serviço de banco de dados nao relacional rápido e flexível para todas as aplicações que precisam
+de latência consistente de milissegundos de um dígito em qualquer escala.
+Ele é totalmente gerenciado, é um banco de dados não relacional, portanto, é possível simplesmente
+criar uma tabela de banco de dados, definir sua utilização de destino para escalabilidade automática
+e deixar o serviço lidar com o restante, ou seja, você não precisa se preocupar com tarefas de 
+gerenciamento de banco de dados, como provisionamento de hardware ou software, aplicação de patches
+de instalação e configuração, operação de um cluster de banco de dados distribuído ou particionamento
+de dados ou várias instâncias á medida que você dimensionar.
+Á medida que seus volumes de dados crescem e a demanda de performance da aplicação aumenta, o DynamoDB
+usa tecnologias de particionamento automático e SSD para atender aos seus requisitos e fornecer baixas
+latências em qualquer escala.
+O DynamoDB se integra ao IAM da AWS, o gerenciamento de identidade e acesso para controle de acesso
+granular de usuários em sua organização. É possível atribuir credencias de segurança a cada usuário
+e controlar o acesso de cada um a serviços e recursos
+
+-Outros propósitos de construção do serviço de banco de dados:
+	RedShift
+O RedShift é um data warehouse escalável que torna muito simples e econômico analisar seus dados em 
+seu data warehouse e seus data lakes. O RedShift oferece performance 10 vezes mais rápida do que 
+qualquer outro data warehouse usando machine learning, execução de consultas parelelas maciças e 
+armazenamento colunar em disco de alta performance. É possível configurar e implantsr um novo data 
+warehouse em minutos, também é possível executar consultas em petabytes de dados no data warehouse do
+Amazon Redshift e exabytes de dados no data lake criado no Amazon S3.
+	AmazonDocumentDB
+O banco de dados de documentos da Amazon é um serviço de banco de dados de documentos rápido, escalável,
+altamente disponível e totalmente gerenciado que atende a cargas de trabalho do MongoDB.
+	Amazon Neptune
+É um serviço de banco de dados grafo rápido, confiável e totalmente gerenciado que torna extremamente
+fácil criar e executar aplicações que funcionam em conjuntos de dados altamente conectados.
+O núcleo do Amazon Neptune é, na verdade, um mecanismo de banco de dados grafo de alta performance e
+propósito específico, sendo otimizado para armazenar bilhões de relacionamentos e criar o grafo com
+latência de milissegundos
+
