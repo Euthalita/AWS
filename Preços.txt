@@ -1,0 +1,34 @@
+A AWS oferece uma abordagem de definição de preço de pagamento conforme o uso para mais de 140
+serviços de nuvem, você só paga pelos serviços individuais que precisar, pelo tempo que utiliza-los,
+sem a necessidade de contratos de longo prazo ou licenciamento complexo.
+A definição de preço da AWS é extremamente semelhante á forma como você pagaria por serviços públicos
+como água ou eletricidade, ou seja, você só paga pelos serviços que utilizar e, quando parar de usa-
+los, não haverá custos adicionais nem taxas de cancelamento.
+Com as instâncias sob demanda, você paga pela capacidade computacional por hora ou por segundo,
+dependendo da instância que você escolher executar, sem a necessidade de compromissos de longo prazo,
+nem pagamentos adiantados. Você pode aumentar ou diminuir a capacidade computacional dependendo das 
+demandas da aplicação e pagar apenas a taxa por hora especificada para a instância escolhida.
+Normalmente, isso é recomendado para flexibilidade de baixo custo das instâncias do EC2 em que não 
+há pagamento adiantado ou compromissos de longo prazo. As instâncias reservadas proporcionam um desconto
+significativo(até 75%) em comparação com a definição de preço das instâncias sob demanda. Além disso,
+quando as instâncias reservadas são atribuídas a uma zona de disponibilidade específica, elas disponibi-
+lizam uma reserva de capacidade, o que proporciona maior segurança em relação á sua capacidade de iniciar
+instâncias quando necessário. Casos de uso comum seriam aplicações com estado de uso.
+As instâncias spot permitem que você solicite capacidade computacional sobressalente do EC2 por até
+90% do preço sob demanda. Essas instâncias spot também estão disponíveis para execução por uma duração
+predefinida em todos os instrumentos com até seis horas de duração, com um desconto de até 30 a 50%
+em comparação com a definição de preço sob demanda. Elas têm preços baixos e previsíveis e oferecem
+a vantagem da escala operacional maciça da AWS, sendo extremamente fácil de iniciar e gerenciar. Elas
+são recomendadas para aplicações que tem tempos de início e parada flexíveis.
+Host dedicado é um servidor físico do Amazon EC2 dedicado á sua organização. Esse hosts ajudam a 
+reduzir custos permitindo usar suas licenças de software vinculadas ao servidor, aceitando Windows
+Server, SQL Server, SUSE Linux Enterprise e ajudam a atender aos seus requisitos de conformidade.
+
+- Gratuidade
+O nível gratuito, permite obter gratuitamente experiência prática com a plataforma, os produtos e os
+serviços da AWS.
+São 12 meses gratuitos somente para novos clientes a partir da data de cadastro. Quando esse serviço
+expira ou o uso de aplicações ultrapassa os níveis de uso gratuito, você simplesmente paga as tarifas
+padrão de pagamento conforme o uso.
+Essas ofertas de nível gratuito são ofertas de avaliação de curto prazo que começam a partir do momen-
+to do primeiro uso
