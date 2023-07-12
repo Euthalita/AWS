@@ -1,0 +1,78 @@
+Security
+A segurança precisa ser incorporada em todas as camadas da carga de trabalho da aplicação.
+A infraestrutura da AWS foi projetada para ser um dos ambientes de computação em nuvem mais flexíveis
+e seguros atualmente disponíveis. Ela foi projetada para fornecer uma plataforma escalável e altamen-
+te confiável, que permite que os clientes implantem aplicações e dados com rapidez e segurança. Todos
+os clientes da AWS se beneficim de um datacenter e de uma arquitetura de rede criados para satisfazer
+os requisitos dos clientes com as maiores exigências de segurança da AWS, isso significa que você
+obtém uma infraestrutura resiliente, projetada para alta segurança sem o gasto de capital e a sobre-
+carga operacional de um datacenter tradicional.
+Todos os clientes da AWS se beneficiam de um datacenter e de uma arquitetura de rede criados para 
+satisfazer os requisitos dos clientes com as maiores exigências de segurança da AWS. Isso significa
+que você obtém uma infraestrutura resiliente, projetada para alta segurança sem o gasto de capital
+e a sobrecarga operacional de um datacenter tradicional.
+A AWS inova em uma escala rápida e incorpora seus comentários aos serviços da AWS, com isso, o cliente
+se beneficia porque as soluções da AWS melhoram com o tempo e os principais serviços de segurança
+evoluem continuamente, isso inclui Identity and Access Management, registro em log e monitoramento,
+criptografia/gerenciamento de chaves, segmentação de rede e proteção DDos padrão. 
+É possíve escolher a segurança que atende ás suas necessidades á medida que cresce, sem incorrer em
+despesas iniciais e com custos operacionais muito mais baixos.
+A automação de tarefas de segurança na AWS melhora sua segurança reduzindo erros de configuração
+humana e dando á sua equipe mais tempo para se concentrar em outros trabalhos essenciais para a sua
+empresa. Suas equipes de segurança podem usar automação de segurança e integração de API para aumentar
+a capacidade de resposta e a agilidade, o que facilita o trabalho em conjunto com equipes de desenvol-
+vedores e operações para criar e implantar código com mais rapidez e segurança.
+
+- Identity and Access Management(IAM)
+Os serviços de segurança, identidade e conformidade da AWS incluem o IAM(Identity and Access Management),
+que permite gerenciar o acesso aos serviços e recursos da AWS com segurança. 
+Ao usar o IAM, você pode criar e gerenciar usuários e grupos da AWS, além de que, você pode usar
+permissões do IAM para permitir e negar acesso de usuários e grupos aos recursos da AWS.
+O IAM controla quem pode usar seus recursos da AWS, isso é a autenticação, e quais recursos eles podem
+usar e como isso é autorizado.
+O IAM permite conceder permissão granular a entidades como usuários, grupos ou funções. Isso permite
+que eles administrem e usem recursos em sua conta da AWS sem precisar compartilhar sua senha ou chaves
+de acesso.
+
+- Organizations
+Permite restringir quais serviços e ações são permitidos em sua conta da AWS.
+
+- Cognito 
+Permite adicionar cadastro, login e controle de acesso de usuários a aplicações Web e para dispositivos 
+móveis.
+
+- Artifact
+Os artefatos fornecem acesso sob demanda aos relatórios de segurança e conformidade da AWS.
+
+- Key Management Service
+Permite criar e gerenciar chaves.
+Controla o uso das chaves de criptografia em uma grande variedade de serviços da AWS em suas aplicações
+
+- Shield 
+É um serviço gerenciado de proteção contra a negação de serviço distribuída, DDos, que protege aplicações
+executadas na AWS.
+Os recursos da AWS são protegidos automaticamente contra os ataques de DDos mais comuns nas camadas de
+rede e transporte. Você também pode obter um nível mais alto de defesa habilitando o AWS Shield 
+Advanced para endereços IP elásticos, Elastic Load Balancing, Amazon CloudFront ou recursos do Route
+53 que você deseja proteger.
+Há basicamente dois níveis do AWS Shield, o avançado e o padrão:
+	Shield Advanced(Avançado)
+Você pode criar regras personalizadas para mitigar ataques sofisticados na camada da aplicação. Essas
+regras personalizáveis podem ser implantadas instantaneamente, permitindo a rápida mitigação de qualquer
+tipo de ataque. 
+Você pode configurar regras proativamente para bloquear automaticamente o tráfego indevido ou responder
+a incidentes á medida que ocorrem, além de que, você também tem acesso 24 horas á equipe de resposta
+de DDos da AWS, além de que você pode criar regras em seu nome para mitigar ataques DDos de camada da
+aplicação.
+
+
+O cliente da AWS é reponsável por alguns aspectos da segurança geral. 
+A AWS opera, gerencia e controla os componentes, desde a camada de virtualização de software até a 
+segurança física das instalações em que os serviços da AWS operam. A AWS é responsável pela proteção
+da infraestrutura que executa todos os serviços oferecidos no portfólio da Nuvem AWS. Essa infraestrutura
+é composta por hardware, software, redes e instalações que executam os Serviços de Nuvem AWS.
+O cliente, por outro lado, é responsável pela criptografia de dados em repouso e em trânsito. O cliente
+também deve garantir que a rede esteja configurada para segurança e que as credenciais e os logins de
+segurança sejam gerenciados de maneira segura.
+O cliente também é responsável pela consagração de grupos de segurança, por exemplo, a configuração 
+do sistema operacional que é executado em instâncias de computação
