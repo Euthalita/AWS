@@ -1,0 +1,64 @@
+Cost Management
+É a forma como é gerenciado os custos na AWS
+
+Há vários níveis de empresa que, conforme tem uma escala maior de uso, elas tem um maior conhecimento
+e gerenciamento de custos na AWS.
+São feitas também parcerias para o compartilhamento de informações e ajuda 
+
+Escala de níveis(maturidade das empresas com relação ao gerenciamento de custos)
+-Novice
+-Beginner 
+-Intermediate
+-Advanced
+-Expert
+
+	GERENCIAMENTO DE CUSTOS DE ACORDO COM A ESCALA
+-Novice
+Nesse nível, as organizações desconhecem algumas coisas, como por exemplo, elas não sabem que a 
+alocação de custos é uma competência. Isso acontece especialmente com organizações que migram para
+a AWS e não realizaram a alocação de custos em seus ambientes anteriores.
+Elas também não sabem que as contas da AWS e as tags de alocação de custos da AWS são dois blocos 
+básicos para estabelecer a alocação de custos.
+
+-Beginner
+Há mais conhecimento e conscientização, no entanto, a organização ainda não tem a estratégia  para
+garantir que tanto contas quanto tags sejam usadas de modo a garantir habilidades de alocação de custos.
+Além disso, há uso inconsistente de tags de alocação de custos, o que dificulta muito a realização
+de uma verdadeira alocação de custos.
+
+-Intermediate
+Há mecanismos para permitr a alocação de custos por meio da combinação de estratégias de contas e 
+políticas de marcação. Há também alguma forma de governança implementada para medir e aplicar a 
+conformidade ou para remediar situações que estão fora de conformidade. No entanto, quando se trata
+de desconto e recursos compartilhados como clusters do ECS ou instâncias do EC2 compartilhados, ainda
+não há mecanismos para alocar esses custos
+
+-Advanced
+A gorvernança de tags está totalmente implementada para medir a conformidade em relação ás nossas
+políticas de marcação.
+
+-Expert
+Têm tags de alocação de custos contábeis que podem ser usadas para executar alocação de custos para
+recursos não compartilhados.
+As políticas de marcação são controladas ativamente e as organizações criaram mecanismos para alocar 
+o custo associado a descontos e recursos compartilhados.
+Além disso, essas organizações também encontraram maneiras de corrigir recursos da AWS que atualmente
+não oferecem suporte a tags.
+
+
+	-Como melhorar seu nível de maturidade acerca da otimização de custos:
+Você pode dimensionar corretamente seus recursos da AWS para eliminar o desperdício e se esses recursos
+fizerem sentido, faça um compromisso com o uso de Savings Plans, use ferramentas e processos de 
+automação para dimensionar corretamente os recursos pouco utilizados e detectar e desativar recursos
+ociosos não utilizados.
+Depois de identificar recursos que podem ser otimizados, veja o retorno sobre o investimento em 
+comparação com o nível de dificuldade para podeer priorizar os recursos com que iniciará seus esforços
+de otimização. Comece com as workloads que oferecem um níel mais baixo de dificuldade e ainda produzem
+um retorno satisfatório sobre o investimento.
+Se a sua empresa cria workloads com priorização da nuvem ou quer migrar para a AWS, certifique-se de
+que está aproveitando os serviços e modelos de compra certos da AWS para começar com os menores custos
+unitários possíveis ao iniciar a jornada para a AWS. Se você está utilizando inst^ncias fáceis de identificar
+para workloads tolerantes a falhas sem estado ou usando a oferta serverless da AWS, como Lambda, para
+pagar apenas pelo que você consome, pequenas otimizações no início do ciclo de vida de uma workload
+permitirá que seu primeiro passo em sua jornada para a nuvem seja o melhor custo.
+Use também o dimensionamento automático para ajudar a combinar a capacidade com sua demanda
